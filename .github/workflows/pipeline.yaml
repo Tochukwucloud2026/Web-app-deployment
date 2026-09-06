@@ -6,41 +6,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and Deploy
-        run: preparing website files
+        run: echo "Building and deploying website files"
 
   validate-website:
     runs-on: ubuntu-latest
     steps:
       - name: Validate Website
-        run: validating website files
+        run: echo "Validating website files"
 
   check-website:
     runs-on: ubuntu-latest
     steps:
       - name: Check Website
-        run: checking website files
+        run: echo "Checking website files"
 
   test-website:
     runs-on: ubuntu-latest
     steps:
       - name: Test Website
-        run: testing website files
+        run: echo "Testing website files"
 
   deploy-website:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Website
-        run: deploying website files
+        run: echo "Deploying website files"
 
   make-website-live:
     runs-on: ubuntu-latest
     steps:
       - name: Make Website Live
-        run: making website live
+        run: echo "Making website live"
 
   publish-website:
     runs-on: ubuntu-latest
     steps:
       - name: Publish Website
-        run: publishing website files
-        
+        run: echo "Publishing website files"
+
+  QAT-testers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testers
+        run: echo "Running QAT testers"
