@@ -1,0 +1,40 @@
+name: web-deployment
+on: push
+
+jobs:
+  validate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and Deploy
+        run: preparing website files
+
+  validate-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Website
+        run: validating website files
+
+  check-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Website
+        run: checking website files
+
+  test-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Website
+        run: testing website files
+
+  deploy-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Website
+        run: deploying website files
+
+  make-website-live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make Website Live
+        run: making website live
+        
