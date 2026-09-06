@@ -10,42 +10,49 @@ jobs:
 
   validate-website:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Validate Website
         run: echo "Validating website files"
 
   check-website:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Check Website
         run: echo "Checking website files"
 
   test-website:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Test Website
         run: echo "Testing website files"
 
   deploy-website:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Deploy Website
         run: echo "Deploying website files"
 
   make-website-live:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Make Website Live
         run: echo "Making website live"
 
   publish-website:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: Publish Website
         run: echo "Publishing website files"
 
   QAT-testers:
     runs-on: ubuntu-latest
+    needs: validate-and-deploy
     steps:
       - name: testers
         run: echo "Running QAT testers"
