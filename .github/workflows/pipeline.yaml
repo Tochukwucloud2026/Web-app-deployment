@@ -37,4 +37,10 @@ jobs:
     steps:
       - name: Make Website Live
         run: making website live
+
+  publish-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish Website
+        run: publishing website files
         
